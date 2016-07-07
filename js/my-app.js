@@ -33,7 +33,7 @@ function onDeviceReady() {
             navigator.app.exitApp();
         }
         else {
-            navigator.app.backHistory()
+            navigator.app.backHistory();
         }
     }, false);
 

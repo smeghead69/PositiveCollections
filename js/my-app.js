@@ -29,7 +29,7 @@ function ScrollToScreen() {
 
 function onDeviceReady() {
     document.addEventListener("backbutton", function (e) {
-        if ($.mobile.activePage.is('#homepage')) {
+        if (window.location.hash == '#index') {
             navigator.app.exitApp();
         }
         else {

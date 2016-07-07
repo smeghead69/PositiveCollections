@@ -30,7 +30,6 @@ function ScrollToScreen() {
 function onDeviceReady() {
     document.addEventListener("backbutton", function (e) {
         if ($.mobile.activePage.is('#homepage')) {
-            e.preventDefault();
             navigator.app.exitApp();
         }
         else {

@@ -1,0 +1,139 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Edit My Details</div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="MyDetails" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block-title">Edit My Details</div>
+        <div id="Error2" class="content-block" style="display:none">
+            <div class="content-block-inner">
+                <div id="RegisterError"></div>
+            </div>
+        </div>
+      <div class="list-block">
+        <ul>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Title</div>
+                        <div class="item-input">
+                            <select id="sltTitle">
+                                <option>Mr</option>
+                                <option>Mrs</option>
+                                <option>Miss</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </li>
+          <li>
+            <div class="item-content">
+              <div class="item-media"><i class="icon icon-form-name"></i></div>
+              <div class="item-inner"> 
+                <div class="item-title label">First Name</div>
+                <div class="item-input">
+                  <input id="txtFirstName" type="text" placeholder="Your first name" required />
+                </div>
+              </div>
+            </div>
+          </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-name"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Surname</div>
+                        <div class="item-input">
+                            <input id="txtSurname" type="text" placeholder="Your surname" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Address1</div>
+                        <div class="item-input">
+                            <input id="txtAddress1" type="text" placeholder="Address 1" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Address2</div>
+                        <div class="item-input">
+                            <input id="txtAddress2" type="text" placeholder="Address 2" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Address3</div>
+                        <div class="item-input">
+                            <input id="txtAddress3" type="text" placeholder="Address 3" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Address4</div>
+                        <div class="item-input">
+                            <input id="txtAddress4" type="text" placeholder="Address 4" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">Address5</div>
+                        <div class="item-input">
+                            <input id="txtAddress5" type="text" placeholder="Address 5" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item-content">
+                    <div class="item-media"><i class="icon icon-form-url"></i></div>
+                    <div class="item-inner">
+                        <div class="item-title label">PostCode</div>
+                        <div class="item-input">
+                            <input id="txtPostCode" type="text" placeholder="PostCode" />
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="#" class="button button-big button-fill color-black back link">Cancel</a></div>
+          <div class="col-50">
+            <input type="submit" id="btnUpdateUser" value="Register" onclick="UpdateUser()" class="button button-big button-fill color-orange"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

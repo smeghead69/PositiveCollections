@@ -1,0 +1,66 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">My Account</div>
+    <div class="right">
+      <!-- Right link contains only icon - additional "icon-only" class--><!--<a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>-->
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="debtdetails" class="page">
+    <!-- Scrollable page content-->
+    <div class="page-content">
+      <div class="content-block">
+        <div class="content-block-inner">
+          <h2>Case Details</h2>
+
+
+
+
+            <div class="col-md-6">
+                <div class="item-team">
+                    <h4>Client Details</h4>
+                    <br />
+                    <div id="lbClientDetails"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="item-team">
+                    <h4>Debtor Details</h4>
+                    <br />
+                    <div id="lbDebtorDetails"></div>
+                    
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="item-team">
+                    <h4>Debt Details</h4>
+                    <br />
+                    <strong>Amount of money you are owed:</strong><br />
+                    <strong>When should the money have been paid:</strong><br />
+                    <strong>Information on how the debt was incurred:</strong><br />
+                    <strong>Payment Option Selected:</strong><br />
+                    <strong>Amount Paid:</strong><br />
+                </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+      <!-- Bottom Tabbar-->
+      <div class="toolbar tabbar tabbar-labels">
+          <div class="toolbar-inner">
+              <a href="#view-1" onclick="ShowAccount()" class="tab-link"> <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Home</span></a>
+              <a href="#view-2" class="tab-link active"><i class="icon tabbar-demo-icon-2"><span class="badge bg-red">0</span></i><span class="tabbar-label">Inbox</span></a>
+              <a href="#view-3" onclick="ShowMyDetails()" class="tab-link"> <i class="icon tabbar-demo-icon-3"></i><span class="tabbar-label">My Details</span></a>
+              <a href="#view-4" onclick="Logout()" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i><span class="tabbar-label">Logoff</span></a>
+          </div>
+      </div>
+  </div>
+</div>

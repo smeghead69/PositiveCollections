@@ -1,0 +1,228 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+        <div class="center sliding">Positive Collections Registration</div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="Register" class="page">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div id="Error2" class="content-block" style="display:none">
+                <div class="content-block-inner">
+                    <div id="RegisterError" class="errormsg"></div>
+                </div>
+            </div>
+
+            <div id="plName">
+                <div class="content-block">
+                    <h3>My Contact Details</h3>
+                </div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <select id="sltTitle">
+                                            <option>Mr</option>
+                                            <option>Mrs</option>
+                                            <option>Miss</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtFirstName" type="text" placeholder="Your first name" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtSurname" type="text" placeholder="Your surname" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li style="margin-top:20px;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtTelephone" type="tel" placeholder="Telephone" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-tel"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtMobile" type="tel" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-50"><a href="#" class="button button-big button-fill color-black back link">Cancel</a></div>
+                        <div class="col-50">
+                            <input type="submit" id="btnRegister2" value="Continue" onclick="Register1()" class="button button-big button-fill color-orange" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="plAddress" style="display:none;">
+                <div class="content-block">
+                    <h3>My Address</h3>
+                </div>
+                <div class="list-block">
+                    <ul>
+                        <li id="plAddress1" style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtAddress1" type="text" placeholder="Address 1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="plAddress2" style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtAddress2" type="text" placeholder="Address 2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="plAddress3" style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtAddress3" type="text" placeholder="Address 3" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="plAddress4" style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtAddress4" type="text" placeholder="Town" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="plAddress5" style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtAddress5" type="text" placeholder="County" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" id="autocomplete-standalone-popup" class="item-link item-content autocomplete-opener">
+                                <input id="txtPostCode" type="hidden" />
+                                <div class="item-media"><i class="icon icon-form-url"></i></div>
+                                <div class="item-inner">
+                                    <div id="ItemTitle" class="item-title">PostCode</div>
+                                    <div class="item-after"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="display:none;">
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="submit" id="btnPostCodeLookup" value="Lookup Address" onclick="RetrievePostCodeLookup()" class="button button-big button-fill color-blue" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-50"><a href="#" class="button button-big button-fill color-black back link">Cancel</a></div>
+                        <div class="col-50">
+                            <input type="submit" id="btnRegister2" value="Continue" onclick="Register2()" class="button button-big button-fill color-orange" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="plLogin" style="display:none;">
+
+                <div class="content-block">
+                    <h3>My Login Details</h3>
+                </div>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-email"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtRegEmail" type="email" placeholder="E-mail" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li style="margin-bottom:20px;">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-password"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input id="txtRegPassword" type="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-50"><a href="#" class="button button-big button-fill color-black back link">Cancel</a></div>
+                        <div class="col-50">
+                            <input type="submit" id="btnRegisterUser" value="Register" onclick="RegisterUser()" class="button button-big button-fill color-orange" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hiddendiv"></div>
+        </div>
+    </div>
+</div>

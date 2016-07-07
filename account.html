@@ -1,0 +1,42 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left"></div>
+        <div class="center sliding">My Account</div>
+    </div>
+</div>
+<div class="pages">
+    <!-- Page, data-page contains page name-->
+    <div data-page="account" class="page">
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="content-block">
+                <div class="content-block-inner">
+                    <div class="content-block-title">My Active Debts</div>
+                    
+                    <div id="listDebts"></div>
+                        
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Tabbar-->
+        <div class="toolbar tabbar tabbar-labels">
+            <div class="toolbar-inner">
+                <a href="#view-1" onclick="ShowAccount()" class="tab-link active"> <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Home</span></a>
+                <a href="#view-2" class="tab-link"><i class="icon tabbar-demo-icon-2"><span class="badge bg-red">0</span></i><span class="tabbar-label">Inbox</span></a>
+                <a href="#view-3" onclick="ShowMyDetails()" class="tab-link"> <i class="icon tabbar-demo-icon-3"></i><span class="tabbar-label">My Details</span></a>
+                <a href="#view-4" onclick="Logout()" class="tab-link"> <i class="icon tabbar-demo-icon-4"></i><span class="tabbar-label">Logoff</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

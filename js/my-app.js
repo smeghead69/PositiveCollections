@@ -28,6 +28,17 @@ function ScrollToScreen() {
 }
 
 function onDeviceReady() {
+    document.addEventListener("backbutton", function (e) {
+        if ($.mobile.activePage.is('#homepage')) {
+            e.preventDefault();
+            navigator.app.exitApp();
+        }
+        else {
+            navigator.app.backHistory()
+        }
+    }, false);
+
+
     ScrollToScreen();
 
     //Just to stop having to proceed through login every time
